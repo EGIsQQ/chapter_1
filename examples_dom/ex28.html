@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Пример 28 - Карточки</title>
+</head>
+
+<body>
+  <div class="items"></div>
+
+  <script src="../js/const.js"></script>
+  <script>
+    for(let i=0; i<people.length; i++){
+      let item = document.createElement('div')
+      item.classList.add('item')
+      item.innerHTML = `
+        ФИО: ${people[i]["name"]['f']} ${people[i]["name"]['i']} ${people[i]["name"]['o']} <br>
+        Номера телефона: ${people[i]["number"]} <br>
+        День рождения: ${people[i]["date"]['d']} ${month[+people[i]["date"]['m']]} ${people[i]["date"]['y']} <br>
+        Комната: ${people[i]["room"]}
+      `
+      document.querySelector('.items').append(item)
+    }
+  </script>
+</body>
+
+</html>

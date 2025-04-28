@@ -1,0 +1,25 @@
+div {
+    background: linear-gradient(145deg, #fcdd2e, #fcb600);
+    position: relative;
+    border-radius: 36px;
+}
+div::before {
+    content: '';
+    background: linear-gradient(178deg, #C8C8C8 0px , transparent 7px), #f5f4f0;
+    height: 96px;
+    width: 96px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 0px 36px;
+}
+div::after {
+    background: #000;
+    height: 96px;
+    width: 96px;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 0 0 36px 0px;
+}
+
